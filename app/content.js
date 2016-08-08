@@ -3,9 +3,9 @@ module.exports = {
 	
 	var returns = new Array();
 	
-	for (i = 0; i < 6; i++) { 
+	for (i = 1; i < 51; i++) { 
 		var title = "Test Post " + i;
-		var randomImageID = Math.floor(Math.random() * 26);
+		var randomImageID = Math.floor(Math.random() * 25) + 1;
 		var randomImagePath = "/img/random/random-" + randomImageID + ".jpg";
 		var randomImageAlt = "Test Image " + randomImageID;
 		
