@@ -4,7 +4,7 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const app = express()  
 const port = 8585
-const host = "10.0.1.8"
+const host = "169.254.237.101"
 
 const indexHandler = require('./indexHandler')
 const blogHandler = require('./blogHandler')
