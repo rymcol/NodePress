@@ -6,5 +6,17 @@ module.exports = {
 
     makeFooter: function () {
         return "<footer><script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script><script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-1.11.0.min.js\"></script><script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-migrate-1.2.1.min.js\"></script><script type=\"text/javascript\" src=\"https://raw.githubusercontent.com/kenwheeler/slick/master/slick/slick.min.js\"></script><script src=\"/inc/dynamics.min.js\"></script><script src=\"/inc/animations.js\"></script></footer></body></html>"
+    },
+    
+    makeJSON: function () {
+	    var dict = {}
+	    
+	    for(i = 1; i < 11; i++) {
+		    var randomNumber = Math.floor(Math.random() * 1000);
+		    var testNum = "Test Number " + i;
+		    dict[testNum] = randomNumber;
+	    }
+	    
+	    return dict
     }
 };

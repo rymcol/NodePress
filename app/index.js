@@ -30,6 +30,12 @@ app.get('/blog', (request, response) => {
 	response.send(page);
 })
 
+app.get('/json', (request, response) => {
+	const jsonData = commondHandler.makeJSON();
+	response.setHeader('Content-Type', 'application/json');
+	response.send(JSON.stringify(jsonData))
+})
+
 app.listen(port, host, (err) => {
   if (err) {
     return console.log('something bad happened', err)
